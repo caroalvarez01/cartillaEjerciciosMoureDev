@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cartilla de Ejercicios MoureDev - Caro</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="RECURSOS/libro.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Cartilla de Ejercicios MoureDev</h1>
+    <p id="p1">Cartilla de estudio de JavaScript de Carolina <br>
+        Esta cartilla web, está diseñada para practicar y mejorar tus habilidades en JavaScript. Cada ejercicio está pensado para ser resuelto de manera independiente, permitiendo que puedas enfocarte en un tema a la vez.
+    </p>
+     <h2 id="Ejercicio-1">Ejercicio 1 - PRIMEROS PASOS</h2>
+    <img id="Ejercicios1" src="RECURSOS/Ejercicios1.jpeg" alt="Imagen de Referncia">
+  </header>
+ 
+  <main>
+
+    <!-- Ejercicio 1 -->
+    <section id="ejercicio-1" class="ejercicio">
+      <p><strong>1.</strong> Escribe un comentario en una línea</p>
+      <div class="resultado" id="resultado-1">
+        <strong>1.</strong>//Este es un comentario en una línea
+      </div>
+    </section>
+
+    <!-- Ejercicio 2 -->
+    <section id="ejercicio-2" class="ejercicio">
+      <p><strong>2.</strong> Escribe un comentario en varias líneas</p>
+      <div class="resultado" id="resultado-2">
+        <strong>2.</strong> /* Este es un comentario
+              en varias líneas */
+            </div>
+
+    </section>
+
+     <!-- Ejercicio 3 -->
+    <section id="ejercicio-3" class="ejercicio">
+      <p><strong>3.</strong> Declara variables con valores asociados a todos los datos de tipo primitivos</p>
+      <div class="resultado" id="resultado-3">
+        Son 7 los tipos de daros primitivos en JavaScript, y son los siguientes:
+        <strong>3.1</strong> let nombre = "Carolina"; // String
+        <strong>3.2</strong> let edad = 34; // Number
+        <strong>3.3</strong> let estudiante = true; // Boolean
+        <strong>3.4</strong> let undefinedVar = undefined; // Undefined
+        <strong>3.5</strong> let nulo = null; // Null
+        <strong>3.6</strong> let mySimbolo = Symbol('mySymbol'); // Symbol
+        <strong>3.7</strong> let myBigInt = BigInt(12345678901234567890); // BigInt
+      </div>
+    </section>
+
+    <!-- Ejercicio 4 -->
+    <section id="ejercicio-4" class="ejercicio">
+     
+      <p><strong>4.</strong> Imprime por consola el valor de todas las variables</p>
+      <div class="resultado" id="resultado-4">
+        <strong>4.1</strong>  console.log(nombre); // "Carolina" (String)
+        <strong>4.2</strong>  console.log(edad); // 34 (Number)
+        <strong>4.3</strong>  console.log(estudiante); // true (Boolean)
+        <strong>4.4</strong>  console.log(undefinedVar); // undefined (Undefined)
+        <strong>4.5</strong>  console.log(nulo); // null (Null)
+        <strong>4.6</strong>  console.log(mySimbolo); // Symbol (Symbol)
+        <strong>4.7</strong>  console.log(myBigInt); // 12345678901234567890n (BigInt)
+      </div>
+    </section>
+
+    <!-- Ejercicio 5 -->
+    <section id="ejercicio-5" class="ejercicio">
+     
+      <p><strong>5.</strong> Imprime por consola el tipo de todas las variables</p>
+      <div class="resultado" id="resultado-5">
+        <strong>5.1</strong> console.log(typeof nombre); // "string"
+        <strong>5.2</strong> console.log(typeof edad); // "number"
+        <strong>5.3</strong> console.log(typeof estudiante); // "boolean"
+        <strong>5.4</strong> console.log(typeof undefinedVar); // "undefined"
+        <strong>5.5</strong> console.log(typeof nulo); // "object" (null is considered an object in JS)
+        <strong>5.6</strong> console.log(typeof mySimbolo); // "symbol"
+        <strong>5.7</strong> console.log(typeof myBigInt); // "bigint"
+      </div>
+    </section>
+
+    <!-- Ejercicio 6 -->
+    <section id="ejercicio-6" class="ejercicio">
+
+      <p><strong>6.</strong> A continuación, modifica los valores de las variables por otros de distinto tipo</p>
+      <div class="resultado" id="resultado-6">
+        <strong>6.1</strong> nombre = 42; // Cambiando de String a Number
+        <strong>6.2</strong> edad = "treinta y cuatro"; // Cambiando de Number a String
+        <strong>6.3</strong> estudiante = 0; // Cambiando de Boolean a Number
+        <strong>6.4</strong> undefinedVar = "ahora definido"; // Cambiando de Undefined a String
+        <strong>6.5</strong> nulo = 100; // Cambiando de Null a Number
+        <strong>6.6</strong> mySimbolo = "no es un símbolo"; // Cambiando de Symbol a String
+        <strong>6.7</strong> myBigInt = 42n; // Cambiando de BigInt a BigInt (pero con un valor diferente)
+      </div>
+    </section>
+
+    <!-- Ejercicio 7 -->
+    <section id="ejercicio-7" class="ejercicio">
+      
+      <p><strong>7.</strong> Declara constantes con valores asociados a todos los tipos de datos primitivos</p>
+      <div class="resultado" id="resultado-7">
+        <strong>7.1</strong> const PI = 3.14159; // Number
+        <strong>7.2</strong> const nombreConstante = "Carolina"; // String
+        <strong>7.3</strong> const esEstudiante = false; // Boolean
+        <strong>7.4</strong> const valorNulo = null; // Null
+        <strong>7.5</strong> const valorIndefinido = undefined; // Undefined
+        <strong>7.6</strong> const miSimbolo = Symbol('miSimbolo'); // Symbol
+        <strong>7.7</strong> const miBigInt = BigInt(12345678901234567890); // BigInt
+      </div>
+    </section>
+
+    <!-- Ejercicio 8 -->
+    <section id="ejercicio-8" class="ejercicio">
+      
+      <p><strong>8.</strong> A continuación, modifica los valores de las constantes</p>
+      <div class="resultado" id="resultado-8">
+        <strong>8.1</strong> // PI = 3.14; // No se puede modificar una constante
+        <strong>8.2</strong> // nombreConstante = "Nuevo Nombre"; // No se puede modificar una constante
+        <strong>8.3</strong> // esEstudiante = true; // No se puede modificar una constante
+        <strong>8.4</strong> // valorNulo = 42; // No se puede modificar una constante
+        <strong>8.5</strong> // valorIndefinido = "Definido"; // No se puede modificar una constante
+        <strong>8.6</strong> // miSimbolo = Symbol('nuevoSimbolo'); // No se puede modificar una constante
+        <strong>8.7</strong> // miBigInt = BigInt(98765432109876543210); // No se puede modificar una constante
+      </div>
+    </section>
+
+    <!-- Ejercicio 9 -->
+    <section id="ejercicio-9" class="ejercicio">
+     
+     <p><Strong>9.</strong> Comenta las líneas que produzcan algún tipo de error al ejecutarse</p>
+      <div class="resultado" id="resultado-9">
+        <strong>9.1</strong> // PI = 3.14; // Error: No se puede modificar una constante
+        <strong>9.2</strong> // nombreConstante = "Nuevo Nombre"; // Error: No se puede modificar una constante
+        <strong>9.3</strong> // esEstudiante = true; // Error: No se puede modificar una constante
+        <strong>9.4</strong> // valorNulo = 42; // Error: No se puede modificar una constante
+        <strong>9.5</strong> // valorIndefinido = "Definido"; // Error: No se puede modificar una constante
+        <strong>9.6</strong> // miSimbolo = Symbol('nuevoSimbolo'); // Error: No se puede modificar una constante
+        <strong>9.7</strong> // miBigInt = BigInt(987654321098765432); // Error: No se puede modificar una constante
+      </div>
+    </section>
+
+  </main>
+
+<div style="text-align: center;">
+  <a href="modulo2.html" class="boton">Siguiente módulo</a>
+</div>
+
+
+  <footer>
+    <p>Creado con 💜 por Caro</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="/01.helloworld.js"></script>
+</body>
+</html>

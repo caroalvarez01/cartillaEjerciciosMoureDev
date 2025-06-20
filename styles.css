@@ -1,0 +1,199 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #040c1c; /* Fallback: negro, para cuando no cargue la imagen del fondo */
+  background-image: url('RECURSOS/fondoBack.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+  color: rgb(1, 13, 42);
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 15px 30px;
+  border: 4px solid black;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f9f9f9, #d1d1d1);
+  box-shadow:
+    3px 3px 0 #000,
+    6px 6px 0 #555;
+  cursor: pointer;
+  user-select: none;
+  animation: float 3s ease-in-out infinite;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animación flotante */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.3));
+  }
+  50% {
+    transform: translateY(-10px);
+    filter: drop-shadow(4px 4px 4px rgba(0,0,0,0.5));
+  }
+}
+
+/* Efecto hover */
+header h1:hover {
+  color: #0077cc;
+  box-shadow:
+    4px 4px 0 #000,
+    8px 8px 0 #0077cc;
+  animation-play-state: paused; /* Pausa la animación cuando pasa el mouse */
+}
+
+
+header p {
+  color: #f8f9fb;
+  font-style: italic;
+    margin-top: 30px;
+}
+
+/* Centrar la imagen */
+#Ejercicios1 {
+  display: block;
+  margin: 30px auto;        /* auto en horizontal centra el bloque */
+  width: 60%;               /* tamaño decente, ajustable */
+  max-width: 500px;         /* nunca mayor a 500px */
+  border: 5px solid white;  /* borde blanco */
+  background-color: white;  /* fondo blanco detrás por si hay transparencia */
+  border-radius: 10px;      /* bordes redondeados, opcional */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* sombra suave */
+}
+
+#Ejercicios1 {
+  transition: transform 0.3s ease; /* Suavidad en el zoom */
+}
+
+#Ejercicios1:hover {
+  transform: scale(1.1); /* Aumenta el tamaño un 10% */
+}
+
+#Ejercicio-1{
+    font-family: Arial, sans-serif;     /* Letra Arial */
+    font-size: 2rem;                    /* Tamaño grande */
+    color: white;                       /* Texto blanco */
+    text-align: center;                /* Centrado */
+    text-shadow: 
+        -1px -1px 0 #000, 
+         1px -1px 0 #000, 
+        -1px  1px 0 #000, 
+         1px  1px 0 #000;              /* Borde negro */
+    margin: 30px auto;                 /* Centrado horizontal */
+
+}
+
+.ejercicio {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.ejercicio ol {
+  margin-left: 30px; /* mueve la lista hacia la derecha */
+  /* o para centrarlo un poco, puedes usar: margin: 0 auto; */
+  max-width: 600px;  /* limita el ancho para que no se extienda demasiado */
+}
+
+.ejercicio ol li::marker {
+  font-weight: bold;  /* negrilla para los números */
+  color: #333;        /* opcional, para un color más visible */
+  font-size: 1.1em;   /* opcional, para que se vean un poco más grandes */
+}
+
+.ejercicio:hover {
+  box-shadow: 0 5px 15px rgb(0 0 0 / 0.15);
+}
+
+.ejercicio h2 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.resultado {
+  margin-top: 15px;
+  background: #e1f0ff;
+  border-left: 5px solid #0077cc;
+  padding: 15px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  min-height: 40px;
+}
+.boton {
+  background-color: white;              /* Fondo blanco */
+  color: black;                         /* Letra negra */
+  border: 2px solid white;              /* Borde blanco */
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  text-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none; /* Por si usas <a> */
+  display: inline-block;
+}
+
+.boton:hover {
+  background-color: #333;               /* Fondo gris oscuro */
+  color: rgb(222, 224, 242);            /* Letra clara */
+  text-shadow: 
+    -1px -1px 0 #000, 
+     1px -1px 0 #000, 
+    -1px  1px 0 #000, 
+     1px  1px 0 #000;                   /* Borde negro en hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #f1eaea;
+  font-size: 0.9rem;
+}
+
+
+
+#p1 {
+  color: #111;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-style: normal;
+  margin-top: 20px;
+}
